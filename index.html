@@ -28,32 +28,60 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3>Welcome to GitHub Pages.</h3>
+          <h1>RoboGherk</h1>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>RoboGherk provides a cucumber-like syntax for testing Android apps.  It runs
+on top of Android instrumentation test cases inside the Android emulator.
+RoboGherk Features subclass the <code>Feature</code> class, provide the starting
+activity, and specify steps with Given(), When(), Then(), and And().  For
+example:</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<div class="highlight"><pre><span class="kn">package</span> <span class="n">com</span><span class="o">.</span><span class="na">leandog</span><span class="o">.</span><span class="na">robogherk</span><span class="o">.</span><span class="na">exercises</span><span class="o">;</span>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<span class="kn">import</span> <span class="nn">com.leandog.robogherk.Feature</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">com.leandog.robogherk.example_app.FirstActivity</span><span class="o">;</span>
 
-<h3>Designer Templates</h3>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyFeature</span> <span class="kd">extends</span> <span class="n">Feature</span> <span class="o">{</span>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+    <span class="kd">public</span> <span class="nf">MyFeature</span><span class="o">()</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">(</span><span class="n">FirstActivity</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+    <span class="o">}</span>
 
-<h3>Rather Drive Stick?</h3>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">test_A_working_scenario</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">Given</span><span class="o">(</span><span class="s">"I am on the HelloRoboGherk activity"</span><span class="o">);</span>
+        <span class="n">Then</span><span class="o">(</span><span class="s">"my 'parameter' should work too"</span><span class="o">);</span>
+        <span class="n">And</span><span class="o">(</span><span class="s">"things that should have occured in setup have"</span><span class="o">);</span>
+        <span class="n">And</span><span class="o">(</span><span class="s">"I go to another screen"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>Steps are dynamically loaded from MyFeatureSteps; for example, the first
+Given() line invokes the I_am_on_the_HelloRoboGherk_activity() method.</p>
 
-<h3>Authors and Contributors</h3>
+<h2>Building</h2>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<ul>
+<li>Run 'ant build' from a clone of the git repository.</li>
+</ul><h2>Development</h2>
 
-<h3>Support or Contact</h3>
+<p>We did incremental development using an existing app. We didn't write unit
+tests for everything, but all new features should be test-driven.</p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>The exercises are acceptance tests on RoboGherk that run against the included
+example app. </p>
+
+<h2>Note on Patches/Pull Requests</h2>
+
+<ul>
+<li>Fork the project.</li>
+<li>Test-drive your feature addition or bug fix. If you need help with 
+unit-testing Android, start a conversation by email. We'll help. </li>
+<li>Send us a pull request. Bonus points for topic branches.</li>
+</ul><h2>Who are we?</h2>
+
+<p>We're the maddogs @ leandog.com. Making the world a better place for mobile
+development. :)</p>
         </section>
 
         <aside id="sidebar">
