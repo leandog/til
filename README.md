@@ -6,5 +6,4 @@ new concept, bit of syntax, command, or tip that we've learned.
 
 -----
 
-Adapted from TIL which is © 2015 thoughtbot, inc.
-[which can be found here](https://raw.githubusercontent.com/thoughtbot/til/)
+Adapted from [TIL](https://github.com/thoughtbot/til) which is © 2015 thoughtbot, inc.
