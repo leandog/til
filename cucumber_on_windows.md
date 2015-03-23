@@ -3,6 +3,7 @@ Install ruby + cucumber on Windows
 
 Install ruby for windows using the [RubyInstaller for Windows]
 (http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.1.5-x64.exe?direct)
+(Note that as of writing, 2.2.0 didn''t work with cucumber so if you want to play safe go with 2.1.0)
 
 Copy this [file]
 (https://raw.githubusercontent.com/rubygems/rubygems/master/lib/rubygems/ssl_certs/AddTrustExternalCARoot-2048.pem) to `%RUBY_HOME%\lib\ruby\2.1.0\rubygems\ssl_certs`
@@ -28,6 +29,12 @@ Done installing documentation for builder, cucumber, diff-lcs, gherkin, multi_js
 on, multi_test after 34 seconds
 6 gems installed
 ```
+
+When running cucumber, you may see a warning about ANSICON: ```** WARNING: You must use ANSICON 1.31 or higher 
+(http://adoxa.110mb.com/ansicon) to get coloured output on Windows```
+
+If you are running in vanilla CMD.exe, install ANSICON to see colorized output. If you are running in a 
+modern console that already supports ANSI, you can supress this warning by adding an environment variable `ANSICON=1`.
 
 Happy cuking!
 
