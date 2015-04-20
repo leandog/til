@@ -36,5 +36,8 @@ When running cucumber, you may see a warning about ANSICON: ```** WARNING: You m
 If you are running in vanilla CMD.exe, install ANSICON to see colorized output. If you are running in a 
 modern console that already supports ANSI, you can supress this warning by adding an environment variable `ANSICON=1`.
 
+When running cucumber, you may also see a warning ```WARNING: cannot load such file -- 2.1/gherkin_lexer_en```
+If you are getting this, try running the following command to install the gherkin gem ```gem install gherkin --platform=ruby```
+
 Happy cuking!
 
