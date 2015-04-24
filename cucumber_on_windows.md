@@ -16,6 +16,9 @@ Then open a new cmd (or other console emulator) and test out the install
 C:\> ruby -v
 ruby 2.1.5p273 (2014-11-13 revision 48405) [x64-mingw32]
 
+C:\> C:\RubyDevKit\devkitvars.bat
+Adding the DevKit to PATH...
+
 C:\> gem install cucumber
 Fetching: builder-3.2.2.gem (100%)
 Successfully installed builder-3.2.2
