@@ -2,8 +2,9 @@
 
 Imagine this setup:
 
-2 heroku instances - 1 for staging, 1 for production
-2 branches - 1 for staging, 1 for production
+2 heroku instances: 1 for staging, 1 for production
+
+2 branches: 1 for staging, 1 for production
 
 I want to push the staging branch to the staging heroku.  So I run:
 
