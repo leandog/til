@@ -12,8 +12,13 @@ ruby -pi.bak -e "gsub(/old/, 'new')" *.config
 ```
 
 `-p` means keep looping while there's something in `$_`.  In our case that's text in a file and files in a list.
+
 `-i` means edit this file in place
-`-i.bak` means edit in place and make a backup with a bak extension
+
+`-i.bak` means edit in place and make a backup with a bak extension (optional if you're brave!)
+
 `-e` means run the next line.  In this context that means run this command over and over until there's no more input.
+
 `"gsub(/old/, 'new')"` means replace old with new.  Google "ruby gsub" if you need more info.
+
 `*.config` means do this for all the *.config files in this folder.
