@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Robogherk by leandog</title>
+    <title>Today I Learned by LeanDog, Inc.</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
@@ -15,80 +15,19 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Robogherk</h1>
-        <p>Gherkin-like acceptance testing for Android in plain Java.</p>
+        <h1>Today I Learned...</h1>
+        <p>Little snippets or pieces of info we share outside of blog posts and whatnot...</p>
 
-        <p class="view"><a href="https://github.com/leandog/RoboGherk">View the Project on GitHub <small>leandog/RoboGherk</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/leandog/RoboGherk/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/leandog/RoboGherk/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/leandog/RoboGherk">View On <strong>GitHub</strong></a></li>
-        </ul>
       </header>
       <section>
-        <h1>RoboGherk</h1>
+        <h1>TIL</h1>
 
-<p>RoboGherk provides a cucumber-like syntax for testing Android apps.  It runs
-on top of Android instrumentation test cases inside the Android emulator.
-RoboGherk Features subclass the <code>Feature</code> class, provide the starting
-activity, and specify steps with Given(), When(), Then(), and And().  For
-example:</p>
-
-<div class="highlight"><pre><span class="kn">package</span> <span class="n">com</span><span class="o">.</span><span class="na">leandog</span><span class="o">.</span><span class="na">robogherk</span><span class="o">.</span><span class="na">exercises</span><span class="o">;</span>
-
-<span class="kn">import</span> <span class="nn">com.leandog.robogherk.Feature</span><span class="o">;</span>
-<span class="kn">import</span> <span class="nn">com.leandog.robogherk.example_app.FirstActivity</span><span class="o">;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MyFeature</span> <span class="kd">extends</span> <span class="n">Feature</span> <span class="o">{</span>
-
-    <span class="kd">public</span> <span class="nf">MyFeature</span><span class="o">()</span> <span class="o">{</span>
-        <span class="kd">super</span><span class="o">(</span><span class="n">FirstActivity</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
-    <span class="o">}</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">test_A_working_scenario</span><span class="o">()</span> <span class="o">{</span>
-        <span class="n">Given</span><span class="o">(</span><span class="s">"I am on the HelloRoboGherk activity"</span><span class="o">);</span>
-        <span class="n">Then</span><span class="o">(</span><span class="s">"my 'parameter' should work too"</span><span class="o">);</span>
-        <span class="n">And</span><span class="o">(</span><span class="s">"things that should have occured in setup have"</span><span class="o">);</span>
-        <span class="n">And</span><span class="o">(</span><span class="s">"I go to another screen"</span><span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</pre></div>
-
-<p>Steps are dynamically loaded from MyFeatureSteps; for example, the first
-Given() line invokes the I_am_on_the_HelloRoboGherk_activity() method.</p>
-
-<h2>Building</h2>
-
-<ul>
-<li>Run 'ant build' from a clone of the git repository.</li>
-</ul><h2>Development</h2>
-
-<p>We did incremental development using an existing app. We didn't write unit
-tests for everything, but all new features should be test-driven.</p>
-
-<p>The exercises are acceptance tests on RoboGherk that run against the included
-example app. </p>
-
-<h2>Note on Patches/Pull Requests</h2>
-
-<ul>
-<li>Fork the project.</li>
-<li>Test-drive your feature addition or bug fix. If you need help with 
-unit-testing Android, start a conversation by email. We'll help. </li>
-<li>Send us a pull request. Bonus points for topic branches.</li>
-</ul><h2>Who are we?</h2>
-
-<p>We're the maddogs @ leandog.com. Making the world a better place for mobile
-development. :)</p>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/leandog">leandog</a></p>
+        <p>This project is maintained by <a href="https://github.com/leandog">LeanDog, Inc.</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
   </body>
 </html>
