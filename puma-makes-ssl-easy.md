@@ -15,3 +15,18 @@ $ puma -b 'ssl://0.0.0.0:443?key=path_to_key&cert=path_to_cert&verify_mode=none&
 ```
 
 Easy as pie!
+
+
+## Puma on MacOS Sierra (or later) "SSL not available in this build"
+
+Newer versions of MacOS do not ship with the proper SSL headers  (https://github.com/puma/puma/issues/971).
+
+To get around this, install OpenSSL and recompile the gem with the correct headers.  If your bundle is using puma 3.7.0 for instance:
+
+```bash
+brew install openssl
+gem uninstall puma
+gem install puma -v '3.7.0' -- --with-cppflags=-I/usr/local/opt/openssl/include --with-ldflags=-L/usr/local/opt/openssl/lib
+```
+
+Then you can run the `puma -b` command as before.
